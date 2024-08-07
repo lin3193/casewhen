@@ -5,3 +5,8 @@ declare @isNagative bit = 1
 declare @amount decimal(18,2) = 500.5
 select @amount * (case when @isNagative = 1 then -1 else 1 end) as result
 ```
+result:
+```
+result
+-500.50
+```
